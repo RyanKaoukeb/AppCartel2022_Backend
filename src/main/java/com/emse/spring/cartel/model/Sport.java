@@ -15,6 +15,9 @@ public class Sport {
     @OneToMany(mappedBy = "sport")
     private Set<Team> teams;
 
+    @OneToMany(mappedBy = "sport")
+    private Set<Match> matches;
+
     public Sport() {
     }
 
