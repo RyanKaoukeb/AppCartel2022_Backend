@@ -19,8 +19,8 @@ public class MatchDaoTest {
 
     @Test
     public void shouldFindId(){
-        Match match = matchdao.getByDate("21/04/22 10:30");
-        Assertions.assertThat(match.getId()).isEqualTo(2);
+        List<Match> matches = matchdao.getByDate("21/04/22 10:30");
+        Assertions.assertThat(matches.get(0).getId()).isEqualTo(2);
     }
 
     @Test

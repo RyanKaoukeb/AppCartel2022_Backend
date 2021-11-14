@@ -13,5 +13,6 @@ public interface EcoleDao extends JpaRepository<Ecole, String> {
 
     Ecole getByName(String name);
     Ecole getById(Long id);
+    List<Ecole> findAll();
 
 }

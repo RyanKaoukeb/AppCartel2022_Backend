@@ -11,7 +11,7 @@ import java.util.*;
 
 public interface MatchDao extends JpaRepository<Match, String>{
     Match getById(Long id);
-    Match getByDate(String date);
+    List<Match> getByDate(String date);
     List<Match> findBySportName(String name);
     List<Match> findByTeam1NameOrTeam2Name(String name1, String name2);
 }
