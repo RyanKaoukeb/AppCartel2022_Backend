@@ -3,6 +3,7 @@ import com.emse.spring.cartel.dao.EcoleDao;
 
 
 import com.emse.spring.cartel.dto.EcoleDto;
+import com.emse.spring.cartel.model.Ecole;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,10 +28,12 @@ public class EcoleController {
     public List<EcoleDto> findAll(){
         return ecoleDao.findAll().stream().map(EcoleDto::new).collect(Collectors.toList());
     }
-    //@GetMapping (path="/{id}")
-    //public EcoleDto findById(@PathVariable Long id) {
-    //    return ecoleDao.getById(id);//.map(EcoleDto::new); // (7)
-    //}
+
+    @GetMapping (path="/{id}")
+    public EcoleDto findById(@PathVariable Long id) {
+        Ecole ecole= ecoleDao.getById(id);
+        return new EcoleDto(ecole);
+    }
 
 
 }
