@@ -1,6 +1,5 @@
 package com.emse.spring.cartel.api;
 import com.emse.spring.cartel.dao.SportDao;
-import com.emse.spring.cartel.dto.EcoleDto;
 import com.emse.spring.cartel.dto.SportDto;
 import com.emse.spring.cartel.model.Sport;
 import org.springframework.transaction.annotation.Transactional;
