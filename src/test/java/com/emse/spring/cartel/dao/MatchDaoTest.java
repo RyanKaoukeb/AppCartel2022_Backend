@@ -28,4 +28,12 @@ public class MatchDaoTest {
         List<Match> matches=matchdao.findByTeam1NameOrTeam2Name("MORSE","MORSE");
         Assertions.assertThat(matches.get(0).getDate()).isEqualTo("21/04/22 10:00");
     }
+
+    @Test
+    public void shouldFindSport(){
+        List<Match> matches=matchdao.findBySportName("FOOTBALL");
+        Assertions.assertThat(matches.get(0).getDate()).isEqualTo("21/04/22 10:00");
+        Assertions.assertThat(matches.get(1).getDate()).isEqualTo("21/04/22 10:30");
+    }
+
 }
