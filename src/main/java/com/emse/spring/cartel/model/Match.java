@@ -24,11 +24,23 @@ public class Match {
     private Long Score_1;
     private Long Score_2;
 
+    public Match(){
+    }
+
     public Long getId() {
         return id;
     }
     public String getDate() {
         return date;
+    }
+    public Long getScore_1(){return Score_1;}
+    public Long getScore_2(){return Score_2;}
+
+    public String getTeam1(){
+        return team1.getName();
+    }
+    public String getTeam2(){
+        return team2.getName();
     }
 
 

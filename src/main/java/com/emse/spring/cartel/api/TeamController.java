@@ -41,4 +41,9 @@ public class TeamController {
         return teamDao.findByEcoleName(name).stream().map(TeamDto::new).collect(Collectors.toList());
     }
 
+    @GetMapping (path="/sport/{name}")
+    public List<TeamDto> findBySportName(@PathVariable String name){
+        return teamDao.findBySportName(name).stream().map(TeamDto::new).collect(Collectors.toList());
+    }
+
 }
