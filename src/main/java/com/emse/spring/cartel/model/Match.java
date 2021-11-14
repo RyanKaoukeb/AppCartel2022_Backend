@@ -42,6 +42,7 @@ public class Match {
     public String getTeam2(){
         return team2.getName();
     }
+    public String getSport() { return sport.getName(); }
 
 
 

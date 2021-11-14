@@ -10,6 +10,7 @@ public class MatchDto {
     private Long Score_2;
     private String team1;
     private String team2;
+    private String sport;
 
     public MatchDto (){
     }
@@ -21,6 +22,7 @@ public class MatchDto {
         this.Score_2= match.getScore_2();
         this.team1=match.getTeam1();
         this.team2= match.getTeam2();
+        this.sport= match.getSport();
     }
 
     public Long getId(){
@@ -35,5 +37,6 @@ public class MatchDto {
     public Long getScore_2(){return Score_2;}
     public String getTeam1(){return team1;}
     public String getTeam2() {return team2;}
+    public String getSport() { return sport;}
 
 }
