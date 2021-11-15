@@ -36,4 +36,9 @@ public class MatchController {
     public List<MatchDto> findBySport(@PathVariable String name) {
         return matchDao.findBySportName(name).stream().map(MatchDto::new).collect(Collectors.toList());
     }
+
+    @GetMapping(path="/ecole/{name}")
+    public List<MatchDto> findBySchool(@PathVariable String name) {
+        return matchDao.findByTeam1NameOrTeam2Name(name,name).stream().map(MatchDto::new).collect(Collectors.toList());
+    }
 }
