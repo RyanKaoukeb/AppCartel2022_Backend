@@ -8,34 +8,35 @@ import java.util.*;
 public class Match {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    private Long id;
+    private Long id; //Primary Key
 
     private String date;
 
     @ManyToOne
-    private Sport sport;
+    private Sport sport; //Foreign Key
 
     @ManyToOne
-    private Team team1;
+    private Team team1; //Foreign Key
 
     @ManyToOne
-    private Team team2;
+    private Team team2;  //Foreign Key
 
     private Long Score_1;
     private Long Score_2;
 
+    //Constructors
     public Match(){
     }
 
-    public Long getId() {
-        return id;
-    }
     public String getDate() {
         return date;
     }
+    //Getters/Setters
+    public Long getId() {
+        return id;
+    }
     public Long getScore_1(){return Score_1;}
     public Long getScore_2(){return Score_2;}
-
     public String getTeam1(){
         return team1.getName();
     }

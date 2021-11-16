@@ -68,3 +68,4 @@ INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(9,'21/04/22 14:00',
 INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(10,'21/04/22 15:00',4,4,24,6,2)
 INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(11,'21/04/22 15:30',4,14,24,2,6)
 INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(12,'21/04/22 16:00',4,4,14)
+

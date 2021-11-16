@@ -19,14 +19,16 @@ public class SportController {
 
     public SportController(SportDao sportDao){
         this.sportDao=sportDao;
-    }
+    } //Basic constructor
 
     @GetMapping
+    //Function to return all sports
     public List<SportDto> findAll(){
         return sportDao.findAll().stream().map(SportDto::new).collect(Collectors.toList());
     }
 
     @GetMapping (path="/{id}")
+    //Function to return a sport by its id
     public SportDto findById(@PathVariable Long id) {
         Sport sport= sportDao.getById(id);
         return new SportDto(sport);
