@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
-@RestController
+//declaration
 @CrossOrigin(origins = "*")
+@RestController
 @RequestMapping("/api/team")
 @Transactional
 public class TeamController {
