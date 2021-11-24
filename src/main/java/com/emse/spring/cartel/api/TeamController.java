@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 //declaration
-@CrossOrigin(origins = "*")
+
 @RestController
 @RequestMapping("/api/team")
 @Transactional
+@CrossOrigin
 public class TeamController {
     private final TeamDao teamDao;
 
