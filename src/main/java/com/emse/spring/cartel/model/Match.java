@@ -44,6 +44,10 @@ public class Match {
         return team2.getName();
     }
     public String getSport() { return sport.getName(); }
+    public void setScore( Long score1,Long score2){
+        this.Score_1=score1;
+        this.Score_2=score2;
+    }
 
 
 

@@ -45,4 +45,11 @@ public class MatchController {
     public List<MatchDto> findBySchool(@PathVariable String name) {
         return matchDao.findByTeam1NameOrTeam2Name(name,name).stream().map(MatchDto::new).sorted(Comparator.comparing(MatchDto::getDate)).collect(Collectors.toList());
     }
+
+    @PutMapping(path = "/{id}/{score1}/{score2}")
+    public MatchDto updateScore(@PathVariable Long id, @PathVariable Long score1, @PathVariable Long score2) {
+        Match match = matchDao.getById(id);
+        match.setScore(score1,score2);
+        return new MatchDto(match);
+    }
 }
