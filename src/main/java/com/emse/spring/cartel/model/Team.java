@@ -27,6 +27,10 @@ public class Team {
     //Constructor
     public Team() {
     }
+
+    public Team (String name){
+        this.name=name;
+    }
     //Getters
     public Long getId() {
         return id;

@@ -2,6 +2,8 @@ package com.emse.spring.cartel.api;
 import com.emse.spring.cartel.dao.MatchDao;
 import com.emse.spring.cartel.dto.MatchDto;
 import com.emse.spring.cartel.model.Match;
+import com.emse.spring.cartel.model.Sport;
+import com.emse.spring.cartel.model.Team;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -50,6 +52,13 @@ public class MatchController {
     public MatchDto updateScore(@PathVariable Long id, @PathVariable Long score1, @PathVariable Long score2) {
         Match match = matchDao.getById(id);
         match.setScore(score1,score2);
+        return new MatchDto(match);
+    }
+
+    @PutMapping(path = "/{id}/{date}")
+    public MatchDto updateDate(@PathVariable Long id, @PathVariable String date){
+        Match match=matchDao.getById(id);
+        match.setDate(date);
         return new MatchDto(match);
     }
 }
