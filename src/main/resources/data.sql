@@ -53,19 +53,35 @@ INSERT INTO TEAM(id,name,ecole_id,sport_id) VALUES(28,'ALES',3,8)
 INSERT INTO TEAM(id,name,ecole_id,sport_id) VALUES(29,'ALES',3,9)
 INSERT INTO TEAM(id,name,ecole_id,sport_id) VALUES(30,'ALES',3,10)
 
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(1,'21/04/22 10:00',1,1,11,5,0)
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(2,'21/04/22 10:30',1,11,21,3,3)
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(3,'21/04/22 11:00',1,21,1)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(1,'21-04-22 10:00',1,1,11,5,0)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(2,'21-04-22 10:30',1,11,21,3,3)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(3,'21-04-22 11:00',1,21,1)
 
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(4,'21/04/22 10:00',2,2,22,0,0)
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(5,'21/04/22 10:30',2,12,21)
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(6,'21/04/22 11:00',2,22,12)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(4,'21-04-22 10:00',2,2,22,0,0)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(5,'21-04-22 10:30',2,12,21)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(6,'21-04-22 11:00',2,22,12)
 
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(7,'21/04/22 12:00',3,3,23,6,2)
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(8,'21/04/22 12:30',3,13,23,5,7)
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(9,'21/04/22 14:00',3,3,13)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(7,'21-04-22 12:00',3,3,23,6,2)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(8,'21-04-22 12:30',3,13,23,5,7)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(9,'21-04-22 14:00',3,3,13)
 
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(10,'21/04/22 15:00',4,4,24,6,2)
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(11,'21/04/22 15:30',4,14,24,2,6)
-INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(12,'21/04/22 16:00',4,4,14)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(10,'21-04-22 15:00',4,4,24,6,2)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(11,'21-04-22 15:30',4,14,24,2,6)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(12,'21-04-22 16:00',4,4,14)
+
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(13,'21-04-22 16:00',5,5,25,6,2)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(14,'21-04-22 12:30',5,15,25,2,6)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(15,'21-04-22 6:00',5,5,15)
+
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(16,'22-04-22 16:00',6,6,26,6,2)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(17,'22-04-22 12:30',6,16,26,2,6)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(18,'22-04-22 6:00',6,6,16)
+
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(19,'22-04-22 17:00',7,7,27,6,2)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(20,'22-04-22 12:30',7,17,27,2,6)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(21,'22-04-22 6:00',7,7,17)
+
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(22,'23-04-22 7:00',9,9,29,6,2)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id,score_1,score_2) VAlUES(23,'23-04-22 14:30',9,19,29,2,6)
+INSERT INTO MATCH(id,date,sport_id,team1_id,team2_id) VAlUES(24,'22-04-22 16:00',9,9,19)
 
